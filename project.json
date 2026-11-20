@@ -1,0 +1,14 @@
+{
+  "number": 12,
+  "name": "ANNRecallBench",
+  "short": "Approximate graph retrieval",
+  "summary": "Inspect a small authored HNSW-style graph against exact retrieval at multiple search budgets.",
+  "profile": "core",
+  "timeout": 600,
+  "scope": "Small authored HNSW-style graph over synthetic random vectors. Build uses exact neighbour selection; no optimized HNSW library or large-scale claim.",
+  "skills": [
+    "Python",
+    "Data Processing",
+    "Software Testing"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "project": "ANNRecallBench",
+  "number": 12,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-20T04:28:58Z",
+  "duration_seconds": 0.2554912567138672,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0"
+  },
+  "source_sha256": {
+    "common.py": "6824312bac56d81a071760617f624272948f76fcae8190f8168a8911c8f7e8b0",
+    "experiment.py": "55317170a07b6d1cd5b4a8ee267e99ce360b0770583d43464fff3de9f80d2241",
+    "run.py": "f59c8f7399ab614d89f8a565b96f60875e75284d439fe5a38bd6837c730dfdbf"
+  },
+  "result": {
+    "build_seconds": 0.008779300027526915,
+    "operating_points": [
+      {
+        "ef": 10,
+        "recall_at_5": 0.8550000000000001,
+        "query_seconds": 0.0217482999432832
+      },
+      {
+        "ef": 30,
+        "recall_at_5": 0.99,
+        "query_seconds": 0.03328249999321997
+      },
+      {
+        "ef": 80,
+        "recall_at_5": 1.0,
+        "query_seconds": 0.04797840001992881
+      }
+    ],
+    "vector_bytes": 57600,
+    "directed_graph_edges": 5274,
+    "checks": [
+      "Query returns bounded five neighbours",
+      "Measured recall within bounds"
+    ],
+    "scope": "Small authored HNSW-style graph over synthetic random vectors. Build uses exact neighbour selection; no optimized HNSW library or large-scale claim."
+  },
+  "models_used": [],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}
